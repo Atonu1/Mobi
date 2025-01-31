@@ -38,35 +38,39 @@
         }
         .text-box {
             width: 840px;
-            height: 128px;
+            height: 80px; /* Adjusted height to fit all boxes */
             position: absolute;
-            top: 50%; /* Centers the boxes vertically */
-            left: 50%; /* Centers the boxes horizontally */
-            transform: translate(-50%, -50%); /* Adjusts for exact center alignment */
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
             margin: 10px 0;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 12px;
             color: white;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             text-align: center;
         }
         .box-1 {
             background-color: #BBCA97;
+            top: 10%;
         }
         .box-2 {
             background-color: #AACDC1;
+            top: 20%;
         }
         .box-3 {
             background-color: #F6EAA1;
+            top: 30%;
         }
         .box-4 {
             background-color: #B3D9BE;
+            top: 40%;
         }
         .box-5 {
             background-color: #F0AA97;
+            top: 50%;
         }
     </style>
 </head>
@@ -76,7 +80,7 @@
             <source src="my-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        
+
         <div class="text-box box-1">Text for Box 1</div>
         <div class="text-box box-2">Text for Box 2</div>
         <div class="text-box box-3">Text for Box 3</div>
