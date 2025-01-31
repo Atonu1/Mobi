@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden; /* Prevents the balls from going outside the screen */
+}
+
+/* Ball Animation */
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+}
+
+/* Rectangular Boxes */
+.text-box {
+    width: 840px;
+    height: 80px; /* Adjusted height to fit all boxes */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Added margin between the boxes */
+}
+
+.box-1 { background-color: #BBCA97; top: 8%; }
+.box-2 { background-color: #AACDC1; top: 22%; }
+.box-3 { background-color: #F6EAA1; top: 36%; }
+.box-4 { background-color: #B3D9BE; top: 50%; }
+.box-5 { background-color: #F0AA97; top: 64%; }
