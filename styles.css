@@ -43,7 +43,7 @@ body {
     align-items: center;
     border-radius: 12px;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
@@ -80,5 +80,5 @@ body {
 
 /* Adding space between the boxes */
 .text-box {
-    margin-top: 30px; /* Adding space between the boxes */
+    margin-top: 12px; /* Adding space between the boxes */
 }
