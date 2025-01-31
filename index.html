@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Video Box with Text Boxes</title>
+    <title>Centered Video Box with Overlay Text Boxes</title>
     <style>
         * {
             margin: 0;
@@ -12,13 +12,14 @@
         }
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
+            position: relative;
         }
         .video-container {
+            position: relative;
             background-color: white;
             width: 1200px;
             height: 800px;
@@ -28,7 +29,6 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            margin-bottom: 30px; /* Space between video container and text boxes */
         }
         video {
             width: 100%;
@@ -39,7 +39,11 @@
         .text-box {
             width: 840px;
             height: 128px;
-            margin: 10px 0; /* Space between each box */
+            position: absolute;
+            top: 50%; /* Centers the boxes vertically */
+            left: 50%; /* Centers the boxes horizontally */
+            transform: translate(-50%, -50%); /* Adjusts for exact center alignment */
+            margin: 10px 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -72,13 +76,12 @@
             <source src="my-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        
+        <div class="text-box box-1">Text for Box 1</div>
+        <div class="text-box box-2">Text for Box 2</div>
+        <div class="text-box box-3">Text for Box 3</div>
+        <div class="text-box box-4">Text for Box 4</div>
+        <div class="text-box box-5">Text for Box 5</div>
     </div>
-    
-    <div class="text-box box-1">Text for Box 1</div>
-    <div class="text-box box-2">Text for Box 2</div>
-    <div class="text-box box-3">Text for Box 3</div>
-    <div class="text-box box-4">Text for Box 4</div>
-    <div class="text-box box-5">Text for Box 5</div>
-
 </body>
 </html>
