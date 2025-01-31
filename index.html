@@ -3,50 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Website</title>
+    <title>Centered Video Box</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
         body {
-            max-width: 400px;
-            margin: auto;
-            background-color: #f8f9fa;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
         }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 15px;
-            font-size: 1.5rem;
+        .video-container {
+            background-color: white;
+            width: 1200px;
+            height: 880px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            font-size: 0.9rem;
-            position: fixed;
-            bottom: 0;
+        video {
             width: 100%;
-            max-width: 400px;
+            height: 100%;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        Mobile Site Header
-    </header>
-    <main>
-        <p>Welcome to your mobile-friendly website!</p>
-    </main>
-    <footer>
-        &copy; 2025 Your Website
-    </footer>
+    <div class="video-container">
+        <video controls>
+            <source src="my-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
 </html>
