@@ -9,8 +9,8 @@ for (let i = 0; i < numBalls; i++) {
     let ball = document.createElement("div");
     ball.classList.add("ball");
     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-    ball.style.left = `${Math.floor(Math.random() * 100)}%`; // Percentage to ensure balls are within container
-    ball.style.top = `${Math.floor(Math.random() * 100)}%`;   // Percentage to ensure balls are within container
+    ball.style.left = `${Math.random() * 100}%`; // Percentage to ensure balls are within container
+    ball.style.top = `${Math.random() * 100}%`;   // Percentage to ensure balls are within container
     ball.style.transform = `scale(${Math.random()})`;
     ball.style.width = `${Math.random() * 3 + 1}em`;  // Ball size between 1em and 4em
     ball.style.height = ball.style.width;
@@ -22,8 +22,8 @@ for (let i = 0; i < numBalls; i++) {
 // Keyframes for ball animation
 balls.forEach((el, i, ra) => {
     let to = {
-        x: Math.random() * (i % 2 === 0 ? -11 : 11),
-        y: Math.random() * 12
+        x: Math.random() * (i % 2 === 0 ? -5 : 5),
+        y: Math.random() * 5
     };
 
     let anim = el.animate(
