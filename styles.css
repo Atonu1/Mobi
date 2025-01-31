@@ -10,13 +10,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevents balls from going outside the screen */
+    overflow: hidden;
 }
 
 /* Container Box to hold both the balls and text boxes */
 .container {
-    width: 80vw; /* 80% of the viewport width */
-    height: 80vh; /* 80% of the viewport height */
+    width: 840px; /* Fixed width for the container */
+    height: 640px; /* Fixed height for the container */
     position: relative;
     background-color: white;
     border-radius: 15px;
@@ -46,12 +46,39 @@ body {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 15px; /* Space between the boxes */
 }
 
-/* Different box colors */
-.box-1 { background-color: #BBCA97; top: 5%; }
-.box-2 { background-color: #AACDC1; top: 23%; }
-.box-3 { background-color: #F6EAA1; top: 41%; }
-.box-4 { background-color: #B3D9BE; top: 59%; }
-.box-5 { background-color: #F0AA97; top: 77%; }
+/* Box 1 */
+.box-1 {
+    background-color: #BBCA97;
+    top: 5%;
+}
+
+/* Box 2 */
+.box-2 {
+    background-color: #AACDC1;
+    top: 23%;
+}
+
+/* Box 3 */
+.box-3 {
+    background-color: #F6EAA1;
+    top: 41%;
+}
+
+/* Box 4 */
+.box-4 {
+    background-color: #B3D9BE;
+    top: 59%;
+}
+
+/* Box 5 */
+.box-5 {
+    background-color: #F0AA97;
+    top: 77%;
+}
+
+/* Adding space between the boxes */
+.text-box:not(:last-child) {
+    margin-bottom: 15px;
+}
