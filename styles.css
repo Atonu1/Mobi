@@ -15,8 +15,8 @@ body {
 
 /* Container Box to hold both the balls and text boxes */
 .container {
-    width: 840px; /* Fixed width for the container */
-    height: 640px; /* Fixed height for the container */
+    width: 1200px; /* Fixed width for the container */
+    height: 800px; /* Fixed height for the container */
     position: relative;
     background-color: white;
     border-radius: 15px;
@@ -33,7 +33,7 @@ body {
 
 /* Rectangular Boxes */
 .text-box {
-    width: 840px;
+    width: 720px;
     height: 128px;
     position: absolute;
     left: 50%;
@@ -51,34 +51,34 @@ body {
 /* Box 1 */
 .box-1 {
     background-color: #BBCA97;
-    top: 5%;
+    top: 0%; /* Adjusted top for first box */
 }
 
 /* Box 2 */
 .box-2 {
     background-color: #AACDC1;
-    top: 23%;
+    top: 30%; /* Adjusted top for second box */
 }
 
 /* Box 3 */
 .box-3 {
     background-color: #F6EAA1;
-    top: 41%;
+    top: 60%; /* Adjusted top for third box */
 }
 
 /* Box 4 */
 .box-4 {
     background-color: #B3D9BE;
-    top: 59%;
+    top: 90%; /* Adjusted top for fourth box */
 }
 
 /* Box 5 */
 .box-5 {
     background-color: #F0AA97;
-    top: 77%;
+    top: 120%; /* Adjusted top for fifth box */
 }
 
 /* Adding space between the boxes */
-.text-box:not(:last-child) {
-    margin-bottom: 15px;
+.text-box {
+    margin-top: 30px; /* Adding space between the boxes */
 }
