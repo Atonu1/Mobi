@@ -10,17 +10,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevents the balls from going outside the screen */
+    overflow: hidden; /* Prevents balls from going outside the screen */
 }
 
 /* Container Box to hold both the balls and text boxes */
 .container {
-    width: 80vw;
-    height: 80vh;
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
     position: relative;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Prevents balls from overflowing the container */
 }
 
 /* Ball Animation */
@@ -45,12 +46,12 @@ body {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px; /* Space between the boxes */
+    margin-bottom: 15px; /* Space between the boxes */
 }
 
 /* Different box colors */
-.box-1 { background-color: #BBCA97; top: 10%; }
-.box-2 { background-color: #AACDC1; top: 24%; }
-.box-3 { background-color: #F6EAA1; top: 38%; }
-.box-4 { background-color: #B3D9BE; top: 52%; }
-.box-5 { background-color: #F0AA97; top: 66%; }
+.box-1 { background-color: #BBCA97; top: 5%; }
+.box-2 { background-color: #AACDC1; top: 23%; }
+.box-3 { background-color: #F6EAA1; top: 41%; }
+.box-4 { background-color: #B3D9BE; top: 59%; }
+.box-5 { background-color: #F0AA97; top: 77%; }
