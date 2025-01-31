@@ -15,8 +15,8 @@ body {
 
 /* Container Box to hold both the balls and text boxes */
 .container {
-    width: 600px; /* Fixed width for the container */
-    height: 600px; /* Adjusted height to fit the boxes */
+    width: 1200px; /* Fixed width for the container */
+    height: 800px; /* Adjusted height to fit the boxes */
     position: relative;
     background-color: white;
     border-radius: 15px;
