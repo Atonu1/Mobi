@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Video Box</title>
+    <title>Centered Video Box with Text Boxes</title>
     <style>
         * {
             margin: 0;
@@ -12,6 +12,7 @@
         }
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -27,12 +28,41 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            margin-bottom: 30px; /* Space between video container and text boxes */
         }
         video {
             width: 100%;
             height: 100%;
             border-radius: 5px;
             object-fit: cover;
+        }
+        .text-box {
+            width: 840px;
+            height: 128px;
+            margin: 10px 0; /* Space between each box */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .box-1 {
+            background-color: #BBCA97;
+        }
+        .box-2 {
+            background-color: #AACDC1;
+        }
+        .box-3 {
+            background-color: #F6EAA1;
+        }
+        .box-4 {
+            background-color: #B3D9BE;
+        }
+        .box-5 {
+            background-color: #F0AA97;
         }
     </style>
 </head>
@@ -43,5 +73,12 @@
             Your browser does not support the video tag.
         </video>
     </div>
+    
+    <div class="text-box box-1">Text for Box 1</div>
+    <div class="text-box box-2">Text for Box 2</div>
+    <div class="text-box box-3">Text for Box 3</div>
+    <div class="text-box box-4">Text for Box 4</div>
+    <div class="text-box box-5">Text for Box 5</div>
+
 </body>
 </html>
