@@ -25,6 +25,7 @@
             height: 100vh;
             background: white;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -37,11 +38,26 @@
             height: 700px;
             background: white;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .svg-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .svg-container svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         /* Responsive Behavior */
@@ -55,6 +71,9 @@
 </head>
 <body>
     <div id="quizResult" class="full-screen">
+        <div class="svg-container">
+            <img src="your-illustration.svg" alt="Quiz Illustration">
+        </div>
         <h2>Quiz Completed! Here are your results.</h2>
     </div>
 
