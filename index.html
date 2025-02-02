@@ -44,23 +44,26 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+            display: none;
         }
 
         /* Default: Desktop View (16:9) */
         @media (min-width: 769px) {
-            .svg-container {
-                width: 100vw;
-                height: 56.25vw; /* 16:9 ratio */
-                max-height: 100vh;
+            .desktop-svg {
+                display: block;
+            }
+            .mobile-svg {
+                display: none;
             }
         }
 
         /* Mobile adjustments for 9:16 aspect ratio */
         @media (max-width: 768px) {
-            .svg-container {
-                width: 100vw;
-                height: 177.78vw; /* 9:16 ratio */
-                max-height: 100vh;
+            .mobile-svg {
+                display: block;
+            }
+            .desktop-svg {
+                display: none;
             }
         }
     </style>
@@ -68,7 +71,8 @@
 <body>
     <div id="quizResult" class="full-screen">
         <div class="svg-container">
-            <img src="your-illustration.svg" alt="Quiz Illustration">
+            <img src="desktop-illustration.svg" alt="Desktop Quiz Illustration" class="desktop-svg">
+            <img src="mobile-illustration.svg" alt="Mobile Quiz Illustration" class="mobile-svg">
         </div>
     </div>
 </body>
