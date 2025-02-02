@@ -17,33 +17,19 @@
             align-items: center;
             height: 100vh;
             background: #f4f4f4;
+            overflow: hidden;
         }
         
-        /* Full-Screen Layout */
+        /* Full-Screen Layout with Responsive SVG */
         .full-screen {
             width: 100vw;
             height: 100vh;
             background: white;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Centered Box Layout (9:16 Aspect Ratio) */
-        .center-box {
-            width: 450px;
-            height: 800px;
-            background: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
         }
         
         .svg-container {
@@ -54,18 +40,10 @@
             align-items: center;
         }
 
-        .svg-container svg {
+        .svg-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-        
-        /* Responsive Behavior */
-        @media (max-width: 768px) {
-            .center-box {
-                width: 90%;
-                height: 160vw;
-            }
         }
     </style>
 </head>
@@ -74,28 +52,6 @@
         <div class="svg-container">
             <img src="your-illustration.svg" alt="Quiz Illustration">
         </div>
-        <h2>Quiz Completed! Here are your results.</h2>
     </div>
-
-    <script>
-        // Function to toggle between full-screen and center-box mode
-        function setLayout(mode) {
-            let resultDiv = document.getElementById("quizResult");
-            if (mode === "center") {
-                resultDiv.classList.remove("full-screen");
-                resultDiv.classList.add("center-box");
-            } else {
-                resultDiv.classList.remove("center-box");
-                resultDiv.classList.add("full-screen");
-            }
-        }
-
-        // Example: Change layout based on screen size
-        if (window.innerWidth > 768) {
-            setLayout("center"); // Use center-box for desktop
-        } else {
-            setLayout("full"); // Use full-screen for mobile
-        }
-    </script>
 </body>
 </html>
