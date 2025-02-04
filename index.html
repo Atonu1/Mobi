@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Result Layout</title>
+    <title>Hero Page</title>
     <style>
         * {
             margin: 0;
@@ -16,60 +16,45 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: #f4f4f4;
-            overflow: hidden;
-        }
-        
-        /* Full-Screen Layout with Responsive SVG */
-        .full-screen {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background: url('background.svg') no-repeat center center fixed;
+            background-size: cover;
             text-align: center;
-            overflow: hidden;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
+            color: white;
         }
-        
-        .svg-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
+        .hero {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
         }
-
-        .svg-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
         }
-
-        /* Default: Desktop View (16:9) */
-        @media (min-width: 769px) {
-            .svg-container {
-                width: 100vw;
-                height: 56.25vw; /* 16:9 ratio */
-                max-height: 100vh;
-            }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
         }
-
-        /* Mobile adjustments for 9:16 aspect ratio */
-        @media (max-width: 768px) {
-            .svg-container {
-                width: 100vw;
-                height: 177.78vw; /* 9:16 ratio */
-                max-height: 100vh;
-            }
+        .btn {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background: white;
+            color: #0072ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #f1f1f1;
         }
     </style>
 </head>
 <body>
-    <div id="quizResult" class="full-screen">
-        <div class="svg-container">
-            <img src="your-illustration.svg" alt="Quiz Illustration">
-        </div>
+    <div class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>Your journey to excellence starts here.</p>
+        <button class="btn" onclick="alert('Button Clicked!')">Get Started</button>
     </div>
 </body>
 </html>
