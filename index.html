@@ -53,17 +53,20 @@
         button {
             padding: 15px 30px;
             width: 300px;
-            font-size: 22px;
+            font-size: 28px;
             border: none;
+            border: 2px solid #D1D1D1; 
             border-radius: 14px;
             background-color: #FFFFFF;
             color: black;
             cursor: pointer;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1); /* Multi-layer shadow for 3D effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
         }
         button:hover {
             background-color: #9ED6B7;
-            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.2), 0px 8px 12px rgba(0, 0, 0, 0.1); /* Larger shadow on hover to create floating effect */
+    transform: translateY(-4px); /* Slightly lift the button on hover */
         }
     </style>
 </head>
