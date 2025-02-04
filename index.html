@@ -14,26 +14,25 @@
         body {
             display: flex;
             flex-direction: column; /* Stack elements vertically */
-            justify-content: flex-start; /* Align items to the start (top of the page) */
+            justify-content: flex-start;
+            align-items: center; /* Align all content horizontally */
             height: 100vh;
             background: url('background.svg') no-repeat center center fixed;
             background-size: cover;
             text-align: center;
+            position: relative;
         }
         h1 {
             font-size: 42px;
             font-weight: bold;
             color: black;
-            position: absolute;
-            top: 128px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-top: 128px; /* 128px space before the title */
         }
         .container {
             display: flex;
             justify-content: center;
             width: 80%;
-            margin-top: 250px; /* Adjust to create space between the title and boxes */
+            margin-top: 620px; /* 620px space after the title for the 3 boxes */
         }
         .box {
             width: 22%;
@@ -44,10 +43,7 @@
             border-radius: 28px;
         }
         .btn-container {
-            position: absolute;
-            bottom: 30px; /* Button will be 30px from the bottom */
-            left: 50%;
-            transform: translateX(-50%); /* Center button horizontally */
+            margin-top: 10px; /* 10px gap between the boxes and the button */
             display: flex;
             justify-content: center;
             width: 100%;
