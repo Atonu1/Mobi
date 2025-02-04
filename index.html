@@ -53,11 +53,11 @@
         }
         button {
             padding: 15px 30px;
-            width: 340px;
+            width: 360px;
             font-size: 28px;
             border: none;
             border: 2px solid #D1D1D1; 
-            border-radius: 14px;
+            border-radius: 28px;
             background-color: #FFFFFF;
             color: black;
             cursor: pointer;
@@ -69,6 +69,11 @@
             box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.2), 0px 8px 12px rgba(0, 0, 0, 0.1); /* Larger shadow on hover to create floating effect */
     transform: translateY(-4px); /* Slightly lift the button on hover */
         }
+.extended-background {
+    height: 400px; /* Adjust this height based on how much you want the second background to extend */
+    background: url('new-background.svg') no-repeat center center;
+    background-size: cover;
+}
     </style>
 </head>
 <body>
@@ -81,5 +86,6 @@
     <div class="btn-container">
         <button>Book My Session</button>
     </div>
+<div class="extended-background"></div>
 </body>
 </html>
