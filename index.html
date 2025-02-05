@@ -5,74 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Page</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Cabin', sans-serif;
-        }
-        body {
-            display: flex;
-            flex-direction: column; /* Stack elements vertically */
-            justify-content: flex-start;
-            align-items: center; /* Align all content horizontally */
-            min-height: calc(100vh + 100px); /* Extends the screen by 100px */
-            background: url('background.svg') no-repeat center center fixed;
-            background-size: cover;
-            background-color: #235161; /* Add your preferred background color */
-            text-align: center;
-            position: relative;
-        }
-        h1 {
-            font-size: 42px;
-            font-weight: bold;
-            color: black;
-            margin-top: 128px; /* 128px space before the title */
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            width: 80%;
-            margin-top: 410px; /* 620px space after the title for the 3 boxes */
-        }
-        .box {
-            width: 22%;
-            height: 225px;
-            background-color: white;
-            border: 1px light grey;
-            margin: 0 10px;
-            border-radius: 28px;
-        }
-        .btn-container {
-            margin-top: -30px; /* 10px gap between the boxes and the button */
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            position: relative;
-            z-index: 0;
-        }
-        button {
-            padding: 15px 30px;
-            width: 360px;
-            font-size: 28px;
-            border: none;
-            border: 2px solid #D1D1D1; 
-            border-radius: 28px;
-            background-color: #FFFFFF;
-            color: black;
-            cursor: pointer;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1); /* Multi-layer shadow for 3D effect */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-        }
-        button:hover {
-            background-color: #9ED6B7;
-            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.2), 0px 8px 12px rgba(0, 0, 0, 0.1); /* Larger shadow on hover to create floating effect */
-    transform: translateY(-4px); /* Slightly lift the button on hover */
-        }
+ *{
+   padding: 0;
+   margin: 0;
+   box-sizing:border-box;
+ }     
+.hero{
+  background: url("background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 60px;
+}
+ h1{
+   color:;
+   padding-top:150px;
+   
+ }
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  background-color:;
+  max-width: 500px;
+  margin: 0 auto;
+  padding:150px 30px 40px 30px;
+}
+.box {
+  width: 100px;
+  height:100px;
+  background-color:#ffffff;
+  border-radius: 8px;
+}
+.btn-container{
+  background-color:;
+  margin: 0;
+}
+
+.btn-container button{
+  padding: 8px 16px;
+  border-radius:6px;
+  border: none;
+}
+      
+.bg_2 {
+  width:100%;
+}
+.bg_2 img {
+  width: 100%;
+}
+
     </style>
 </head>
 <body>
-    <h1>"Where Thoughts Find Understanding."</h1>
+  <section class="hero">    
+  <h1>"Where Thoughts Find Understanding."</h1>
     <div class="container">
         <div class="box"></div>
         <div class="box"></div>
@@ -81,5 +69,9 @@
     <div class="btn-container">
         <button>Book My Session</button>
     </div>
+</section>
+<div class="bg_2">
+  <img src="background2.svg">
+</div>
 </body>
 </html>
