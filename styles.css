@@ -82,3 +82,11 @@ body {
 .text-box {
     margin-top: 5px; /* Reduced gap between the boxes to 5px */
 }
+
+.box img {
+    width: 80%; /* Make the image take up 80% of the box width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing under the image */
+    margin: 25px auto 10px; /* 25px from top, centered horizontally, 10px from bottom */
+}
+
