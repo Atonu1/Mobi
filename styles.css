@@ -84,9 +84,11 @@ body {
 }
 
 .box img {
-    width: 80%; /* Make the image take up 80% of the box width */
+    width: 90%; /* Make the image take up 80% of the box width */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra spacing under the image */
-    margin: 25px auto 10px; /* 25px from top, centered horizontally, 10px from bottom */
+    position: absolute;
+    top: 15px;
+    left:50%;
+   transform: translateX(-50%);
 }
 
